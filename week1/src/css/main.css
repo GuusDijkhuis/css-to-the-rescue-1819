@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  overflow: hidden;
+}
+
+.container {
+  width: 80vw;
+  height: 100vh;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+}
+
+.ingredients {
+  width: 12.5vw;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  transition: 1s;
+  text-transform: uppercase;
+  color: white;
+  margin: none
+}
+.ingredients:hover {
+  width: 100vh;
+  z-index: 1000;
+  transform: rotate(-90deg);
+}
+.ingredients > span {
+  font-size: 10rem;
+  opacity: .5;
+  transform: rotate(270deg);
+}
+.ingredients:hover span {
+  width: 100%;
+  text-align: right;
+}
+
+#bun-top {
+  background-color: #DB9F00;
+}
+#lettuce {
+  background-color: #A9C11F;
+}
+#tomato {
+  background-color: #D6543E;
+}
+#onion {
+  background-color: #D8C7A0;
+}
+#red-sauce {
+  background-color: #D60000;
+}
+#cheese {
+  background-color: #EBA800;
+}
+#burger {
+  background-color: #852100;
+}
+#bun-bottom {
+  background-color: #DB9F00;
+}
