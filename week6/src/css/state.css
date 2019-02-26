@@ -1,0 +1,75 @@
+
+.is-rainy-checked:checked + .layout-main-content > .layout-food-content {
+  transition: 1s;
+}
+.is-rainy-checked:checked + .layout-main-content > .layout-food-content > .img-slider-title {
+  transition: 1s;
+}
+.is-rainy-checked:checked + .layout-main-content > .layout-food-content > .img-slider > .slider-item {
+  filter: blur(10px);
+  transition: 1s;
+}
+
+.is-rainy-checked + .layout-main-content > .layout-food-content {
+  transition: 1s;
+}
+.is-rainy-checked + .layout-main-content > .layout-food-content > .img-slider {
+  transition: 1s;
+}
+
+.is-item-hover:hover {
+  flex-grow: .5;
+  width: 300px;
+  transition: all 1s ease;
+  background-color: rgba(var(--primary-color),0.6);
+}
+.is-item-checked + label {
+  box-shadow: 10px 10px 50px 0px rgba(var(--primary-colors),0.6);
+  transition: 1s;
+  opacity: 1;
+  animation: rotate-checked 2s forwards;
+
+}
+.is-item-checked:checked + label {
+  flex-grow: .5;
+  height: 35rem;
+  filter:none;
+  transition: all 1s ease;
+  background-color: rgba(var(--primary-color),0.6);
+  animation: rotate-checked 2s forwards;
+}
+.is-item-checked:checked + label:hover {
+  background-color: rgba(var(--primary-color),1);
+}
+.is-item-checked:not(:checked) + label {
+  transition: 1s;
+}
+
+@keyframes rotate-checked {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: translateY(-5vh);
+  }
+}
+@keyframes shaking-checked {
+  0% {
+    transform: translateY(100vh);
+  }
+  25% {
+    transform: translateY(-100vh);
+  };
+  50% {
+    transform: translateY(100vh);
+  };
+  75% {
+    transform: translateY(-100vh);
+  };
+  100% {
+    transform: translateY(100vh);
+  }
+}

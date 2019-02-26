@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="src/css/global.css">
+  <title>Horizontal accordion</title>
+</head>
+<body>
+<main>
+  <div class="layout-background-rain background-rain">
+    <div class="set">
+      <div class="rain-drops rain-drops-1"></div>
+      <div class="rain-drops rain-drops-2"></div>
+      <div class="rain-drops rain-drops-3"></div>
+      <div class="rain-drops rain-drops-1"></div>
+      <div class="rain-drops rain-drops-2"></div>
+      <div class="rain-drops rain-drops-3"></div>
+      <div class="rain-drops rain-drops-1"></div>
+      <div class="rain-drops rain-drops-2"></div>
+    </div>
+    <div class="set set2">
+      <div class="rain-drops rain-drops-1"></div>
+      <div class="rain-drops rain-drops-2"></div>
+      <div class="rain-drops rain-drops-3"></div>
+      <div class="rain-drops rain-drops-1"></div>
+      <div class="rain-drops rain-drops-2"></div>
+      <div class="rain-drops rain-drops-3"></div>
+      <div class="rain-drops rain-drops-1"></div>
+      <div class="rain-drops rain-drops-2"></div>
+    </div>
+    <div class="set set3">
+      <div class="rain-drops rain-drops-1"></div>
+      <div class="rain-drops rain-drops-2"></div>
+      <div class="rain-drops rain-drops-3"></div>
+      <div class="rain-drops rain-drops-1"></div>
+      <div class="rain-drops rain-drops-2"></div>
+      <div class="rain-drops rain-drops-3"></div>
+      <div class="rain-drops rain-drops-1"></div>
+      <div class="rain-drops rain-drops-2"></div>
+    </div>
+  </div>
+  <label class="rainy-toggle-button" for="rainy-toggle">Rain</label>
+  <input class="rainy-checkbox is-rainy-checked" id="rainy-toggle" type="checkbox">
+  <div class="layout-main-content">
+    <div class="layout-food-content">
+      <div class="img-slider-title">
+        <span class="title-step">Step 1:</span>
+        <span class="title-instruction">Choose what bun you want!</span>
+      </div>
+      <div class="img-slider">
+        <input class="food-radio is-item-checked" id="sesame-top-check" name="bun" type="radio">
+        <label class="slider-item is-item-hover " for="sesame-top-check">
+          <span class="item-title">Sesame</span>
+        </label>
+        <input class="food-radio is-item-checked" id="white-top-check" name="bun" type="radio">
+        <label class="slider-item lettuce-color is-item-hover" for="white-top-check">
+          <span class="item-title">White</span>
+        </label>
+        <input class="food-radio is-item-checked" id="whole-grain-check" name="bun" type="radio">
+        <label class="slider-item tomato-color is-item-hover" for="whole-grain-check">
+          <span class="item-title">Whole grain</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="layout-food-content">
+      <div class="img-slider-title">
+        <span class="title-step">Step 2:</span>
+        <span class="title-instruction">Choose what toppings you want!</span>
+      </div>
+      <div class="img-slider">
+        <input class="food-radio is-item-checked" id="onion-check" type="checkbox">
+        <label class="slider-item is-item-hover " for="onion-check">
+          <span class="item-title">Onion</span>
+        </label>
+        <input class="food-radio is-item-checked" id="lettuce-check" type="checkbox">
+        <label class="slider-item lettuce-color is-item-hover" for="lettuce-check">
+          <span class="item-title">Lettuce</span>
+        </label>
+        <input class="food-radio is-item-checked" id="tomato-check" type="checkbox">
+        <label class="slider-item tomato-color is-item-hover" for="tomato-check">
+          <span class="item-title">Tomato</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="layout-food-content">
+      <div class="img-slider-title">
+        <span class="title-step">Step 3:</span>
+        <span class="title-instruction">Choose the burger you want!</span>
+      </div>
+      <div class="img-slider">
+        <input class="food-radio is-item-checked" id="pork-check" type="checkbox">
+        <label class="slider-item is-item-hover " for="pork-check">
+          <span class="item-title">Pork</span>
+        </label>
+        <input class="food-radio is-item-checked" id="beef-check" type="checkbox">
+        <label class="slider-item lettuce-color is-item-hover" for="beef-check">
+          <span class="item-title">Beef</span>
+        </label>
+        <input class="food-radio is-item-checked" id="chicken-check" type="checkbox">
+        <label class="slider-item tomato-color is-item-hover" for="chicken-check">
+          <span class="item-title">Chicken</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</main>
+<footer></footer>
+
+<script src="src/js/main.js"></script>
+</body>
+</html>
+
+<!-- <input class="food-radio is-item-checked" id="onion-check" type="checkbox">
+<label class="slider-item onion-color is-item-hover" for="onion-check">
+  <span class="item-title">Onion</span>
+</label>
+<input class="food-radio is-item-checked" id="sauce-check" name="burger-checkbox" type="checkbox">
+<label class="slider-item sauce-color is-item-hover" for="sauce-check">
+  <span class="item-title">Sauce</span>
+</label>
+<input class="food-radio is-item-checked" id="cheese-check" type="checkbox">
+<label class="slider-item cheese-color is-item-hover" for="cheese-check">
+  <span class="item-title">Cheese</span>
+</label>
+<input class="food-radio is-item-checked" id="burger-check" type="checkbox">
+<label class="slider-item burger-color is-item-hover" for="burger-check">
+  <span class="item-title">Burger</span>
+</label>
+<input class="food-radio is-item-checked" id="bun-bottom-check" type="checkbox">
+<label class="slider-item bun-color is-item-hover" for="bun-bottom-check">
+  <span class="item-title">Bun Bottom</span>
+</label> -->

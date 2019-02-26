@@ -1,0 +1,126 @@
+.layout-background-rain {
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+  position: fixed;
+}
+.layout-background-rain .set {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.layout-background-rain .set2 {
+  transform: scale(2) rotate(180deg);
+  filter: blur(2px)
+}
+.layout-background-rain .set3 {
+  transform: scale(0.8) rotate(180deg);
+  filter: blur(4px)
+}
+
+.layout-background-rain .set .rain-drops {
+  position: absolute;
+  display: block;
+}
+.layout-background-rain .set .rain-drops-1 {
+  width: 1rem;
+  height: 1rem;
+  background-color: rgba(var(--primary-color),0.8)
+}
+.layout-background-rain .set .rain-drops-2 {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(var(--primary-color),0.8)
+}
+.layout-background-rain .set .rain-drops-3 {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(var(--primary-color),0.8)
+}
+
+.layout-background-rain .set .rain-drops:nth-child(1) {
+  left: 20%;
+  animation: rain-animation 15s linear infinite;
+  animation-delay: -7s;
+}
+.layout-background-rain .set .rain-drops:nth-child(2) {
+  left: 50%;
+  animation: rain-animation 20s linear infinite;
+  animation-delay: -5s;
+}
+.layout-background-rain .set .rain-drops:nth-child(3) {
+  left: 70%;
+  animation: rain-animation 20s linear infinite;
+}
+.layout-background-rain .set .rain-drops:nth-child(4) {
+  left: 0%;
+  animation: rain-animation 15s linear infinite;
+  animation-delay: -5s;
+}
+.layout-background-rain .set .rain-drops:nth-child(5) {
+  left: 85%;
+  animation: rain-animation 18s linear infinite;
+  animation-delay: -10s;
+}
+.layout-background-rain .set .rain-drops:nth-child(6) {
+  left: 0%;
+  animation: rain-animation 12s linear infinite;
+  animation-delay: -7s;
+}
+.layout-background-rain .set .rain-drops:nth-child(7) {
+  left: 15%;
+  animation: rain-animation 14s linear infinite;
+}
+.layout-background-rain .set .rain-drops:nth-child(8) {
+  left: 60%;
+  animation: rain-animation 15s linear infinite;
+}
+
+@keyframes rain-animation {
+  0% {
+    opacity: 0;
+    top: -10%;
+    transform: translateX(20px) rotate(0deg)
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(-20px) rotate(45deg)
+  }
+  40% {
+    transform: translateX(20px) rotate(90deg)
+  }
+  60% {
+    transform: translateX(-20px) rotate(90deg)
+  }
+  80% {
+    transform: translateX(20px) rotate(135deg)
+  }
+  60% {
+    transform: translateX(-20px) rotate(180deg)
+  }
+  100% {
+    top: 110%;
+    transform: translateX(-20px) rotate(225deg)
+  }
+}
+
+
+.layout-main-content {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  z-index: 10;
+}
+.layout-main-content .layout-food-content {
+  width: 100%;
+  height: 90vh;
+  padding: 10vh 0
+}
+.layout-main-content .layout-ingredient-information {
+  width: 100%;
+}
