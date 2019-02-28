@@ -41,8 +41,17 @@
       <div class="rain-drops rain-drops-2"></div>
     </div>
   </div>
-  <label class="rainy-toggle-button" for="rainy-toggle">Rain</label>
-  <input class="rainy-checkbox is-rainy-checked" id="rainy-toggle" type="checkbox">
+  <div class="weather-choices">
+    <label class="winter-toggle-button is-weather-toggle-hover weather-toggle" tabindex="1" for="winter-toggle">Winter</label>
+    <label class="spring-toggle-button is-weather-toggle-hover weather-toggle" tabindex="2" for="spring-toggle">Spring</label>
+    <label class="summer-toggle-button is-weather-toggle-hover weather-toggle" tabindex="3" for="summer-toggle">Summer</label>
+    <label class="autumn-toggle-button is-weather-toggle-hover weather-toggle" tabindex="4" for="autumn-toggle">Autumn</label>
+  </div>
+
+  <input class="winter-checkbox is-winter-checked" name="weather-choice" id="winter-toggle" type="radio">
+  <input class="summer-checkbox is-summer-checked" name="weather-choice" id="summer-toggle" type="radio">
+  <input class="autumn-checkbox is-autumn-checked" name="weather-choice" id="autumn-toggle" type="radio">
+  <input class="spring-checkbox is-spring-checked" name="weather-choice" id="spring-toggle" type="radio">
   <div class="layout-main-content">
     <div class="layout-food-content">
       <div class="img-slider-title">
@@ -53,10 +62,12 @@
         <input class="food-radio is-item-checked" id="sesame-top-check" name="bun" type="radio">
         <label class="slider-item is-item-hover " for="sesame-top-check">
           <span class="item-title">Sesame</span>
+          <p class="item-information">Sesambrood is een verzamelnaam voor brood dat bedekt is met sesamzaad. Sezamzaad is afkomstig van de plant Sesam (Sesamum indicum) en heeft een licht nootachtige smaak. Het is rijk aan olie, eiwitten en verschillende mineralen en vitamines. In Nederland werd sesambrood aanvankelijk veel in natuurvoedingswinkels verkocht, maar het is nu ook bij vele reguliere bakkers en supermarkten verkrijgbaar.</p>
         </label>
         <input class="food-radio is-item-checked" id="white-top-check" name="bun" type="radio">
         <label class="slider-item lettuce-color is-item-hover" for="white-top-check">
           <span class="item-title">White</span>
+          <p class="item-information">Wittebrood of witbrood is brood gebakken van tarwemeel waar de kiem en de zemel geheel uit zijn gezeefd of gebuild. Wittebrood wordt in Europa al duizenden jaren gegeten. De samenstelling en status van wittebrood hebben in de loop van de tijd gevarieerd.</p>
         </label>
         <input class="food-radio is-item-checked" id="whole-grain-check" name="bun" type="radio">
         <label class="slider-item tomato-color is-item-hover" for="whole-grain-check">
@@ -79,7 +90,7 @@
         <label class="slider-item lettuce-color is-item-hover" for="lettuce-check">
           <span class="item-title">Lettuce</span>
         </label>
-        <input class="food-radio is-item-checked" id="tomato-check" type="checkbox">
+        <input class="food-radio is-item-checked" id="tomato-check" type="checkbox" checked>
         <label class="slider-item tomato-color is-item-hover" for="tomato-check">
           <span class="item-title">Tomato</span>
         </label>
@@ -100,7 +111,7 @@
         <label class="slider-item lettuce-color is-item-hover" for="beef-check">
           <span class="item-title">Beef</span>
         </label>
-        <input class="food-radio is-item-checked" id="chicken-check" type="checkbox">
+        <input class="food-radio is-item-checked" id="chicken-check" type="checkbox" checked>
         <label class="slider-item tomato-color is-item-hover" for="chicken-check">
           <span class="item-title">Chicken</span>
         </label>

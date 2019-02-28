@@ -8,6 +8,8 @@
   width: 50vw;
   text-align: center;
   margin: 0 auto;
+  color: rgba(var(--primary-color),0.8);
+
 }
 .layout-main-content .layout-food-content .img-slider-title .title-step {
   display: block;
@@ -25,31 +27,63 @@
 }
 .layout-main-content .layout-food-content .img-slider {
   display: flex;
-  width: 50vw;
+  width: 70vw;
   height: 100%;
   margin: 0 auto;
+
 }
 .layout-main-content .layout-food-content .img-slider .slider-item {
   display: block;
-  height: auto;
   transition: all .5s;
   position: relative;
-  width: 5rem;
+  width: 7rem;
   transition: 1s;
+  box-shadow: 10px 10px 50px 0px rgba(var(--primary-color),1);
   overflow: hidden;
-  opacity: .65;
 }
 .layout-main-content .layout-food-content .img-slider .slider-item .item-title {
-  display: flex;
-  position: absolute;
-  width: 30rem;
-  color: rgba(255,255,255,.25);
+  display: block;
+  width: 100%;
+  color: rgba(var(--primary-color),.9);
   font-size: 5rem;
   overflow: hidden;
 }
+.layout-main-content .layout-food-content .img-slider .slider-item .item-information {
+  display: block;
+  color: rgba(var(--primary-color),.9);
+  width: 100%;
+}
+
+.weather-choices {
+  display: flex;
+}
+.weather-toggle {
+  flex: 1 0 10%;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(var(--primary-color),0.4);
+  margin: .5rem .25rem;
+}
+
 
 .food-radio,
-.rainy-checkbox,
+.winter-checkbox,
+.spring-checkbox,
+.summer-checkbox,
+.autumn-checkbox,
 .ingredients-radio {
   display: none;
+}
+
+
+@media screen and (max-width: 992px) {
+  .layout-main-content .layout-food-content .img-slider {
+    display: block;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .layout-main-content .layout-food-content .img-slider .slider-item {
+    display: block;
+    width: 100%;
+  }
 }

@@ -1,14 +1,7 @@
 :root {
-  --body-background-color: rgba(230,255,251,.4);
   --body-width: 100vw;
 
   --primary-color: 20,240,214;
-
-  --font-color-heading: rgba(var(--primary-color),.8);
-  --font-color-text: rgba(var(--secondary-color),1);
-
-  --background-primary: rgba(var(--primary-color),.1);
-
 }
 
 * {
@@ -18,7 +11,7 @@
   font-family: Roboto;
 }
 body {
-  background-color: var(--background-primary);
+  background-color: rgba(var(--primary-color),.2);
   width: var(--body-width);
   height: auto;
 }
